@@ -1,20 +1,56 @@
 * {
     color: whitesmoke;
-    background-color: black;
     margin: 0px;
     padding: 0px;
+    
 }
 
 body {
     max-width: 1400px;
     margin: auto;
+    background-color: black;
 }
 
 ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    font-size: 24px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 500px;
+}
+
+header {
+    /*background-image: url(https://cdn.pixabay.com/photo/2016/04/04/12/43/texture-1306790_960_720.jpg);*/
+    background-color: rgb(36, 36, 36);
+}
+
+header .hero-text {
+    margin-left: 100px;
+}
+
+header img {
+    margin-right: 100px;
+    max-width: 400px;
+    height: auto;
 }
