@@ -4,3 +4,17 @@
     margin: 0px;
     padding: 0px;
 }
+
+body {
+    max-width: 1400px;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
