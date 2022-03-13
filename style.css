@@ -23,9 +23,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 80px;
-    /*background-color: rgb(15, 15, 15);*/
-    
+    min-height: 80px; 
 }
 
 nav ul {
@@ -36,12 +34,8 @@ nav ul {
 }
 
 .container {
-    /*display: flex;
-    align-items: center;
-    justify-content: space-between;*/
     min-height: 500px;
 }
-
 
 header {
     display: flex;
@@ -52,15 +46,26 @@ header {
     border-radius: 5px;
 }
 
-
 header .hero-text {
-    margin-left: 100px;
+    margin-left: 100px;  
+}
+
+header .hero-text p {
+    color: whitesmoke;
 }
 
 header img {
     margin-right: 100px;
     max-width: 400px;
     height: auto;
+    border-radius: 4px;
+}
+
+header button {
+    background-color: rgb(15, 15, 15);
+    padding: 10px;
+    border: 1px;
+    border-style: solid;
 }
 
 .container h2 {
@@ -74,21 +79,73 @@ header img {
     justify-content: space-around;
     }
 
-    .container .profiles .profile-box {
-        box-shadow: 5px 5px 3px #c9c7c7;
-        min-height: 150px;
-        background-color: rgb(15, 15, 15);
-        border: 1px;
-        border-style: solid;
-        border-radius: 5px;
-        border-color: rgb(117, 117, 117);  
-    }
+.container .profiles .profile-box {
+    min-height: 150px;
+    box-shadow: 5px 5px 3px #c9c7c7;    
+    background-color: rgb(15, 15, 15);
+    border: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(117, 117, 117);  
+}
 
+.container .call-to-action {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 400px;
+    background-color: whitesmoke;
+    margin-bottom: 50px;
+    box-shadow: 5px 5px 3px rgb(117, 117, 117);    
+    border: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(117, 117, 117);
+}
 
-    footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 60px;
-        background-color: rgb(15, 15, 15);
-    }
+.container .call-to-action .call-text h3, p {
+    color: black;
+    
+}
+.container .call-to-action .call-text h3 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.container .call-to-action .call-text p {
+    font-size: 24px;
+}
+
+.container .call-to-action form input {
+    border-radius: 18px;
+    width: 200px;
+    color: black;
+    padding: 8px 0px;
+}
+
+input::placeholder {
+    padding-left: 15px;
+    font-weight: bold;
+}
+
+.container .call-to-action button {
+    padding: 8px 16px;
+    font-size: 16px;
+    color: black;
+    margin-top: 5px;
+    background-color: white;
+    border: 1px;
+    border-style: solid;
+    border-radius: 9px;
+    
+}
+
+footer {
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+    background-color: rgb(15, 15, 15);
+    margin-bottom: 0px;
+}
