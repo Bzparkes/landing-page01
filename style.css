@@ -29,8 +29,15 @@ nav {
 nav ul {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 30px;
     font-size: 24px;
+}
+
+nav ul a img {
+    width: 60px;
+    height: auto;
+    background-color: whitesmoke;
 }
 
 .container {
@@ -44,10 +51,12 @@ header {
     background-color: rgb(15, 15, 15);
     box-shadow: 5px 5px 3px #c9c7c7;
     border-radius: 5px;
+    
 }
 
 header .hero-text {
     margin-left: 100px;  
+    max-width: 300px;
 }
 
 header .hero-text p {
@@ -58,7 +67,11 @@ header img {
     margin-right: 100px;
     max-width: 400px;
     height: auto;
+    border: 1px;
+    border-style: solid;
+    border-color: whitesmoke;
     border-radius: 4px;
+    box-shadow: 5px 5px 3px #c9c7c7;
 }
 
 header button {
@@ -66,6 +79,8 @@ header button {
     padding: 10px;
     border: 1px;
     border-style: solid;
+    border-radius: 4px;
+    margin-top: 10px;
 }
 
 .container h2 {
@@ -77,16 +92,30 @@ header button {
 .container .profiles {
     display: flex;
     justify-content: space-around;
+    padding-bottom: 60px;
     }
 
 .container .profiles .profile-box {
-    min-height: 150px;
+    min-height: 300px;
     box-shadow: 5px 5px 3px #c9c7c7;    
     background-color: rgb(15, 15, 15);
     border: 1px;
     border-style: solid;
     border-radius: 5px;
     border-color: rgb(117, 117, 117);  
+}
+
+.container .profiles .profile-box img {
+    width: 150px;
+    height: 100px;
+    background-color: whitesmoke;
+}
+
+.container .profiles .profile-box p {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 150px;
+    color: whitesmoke;
 }
 
 .container .call-to-action {
@@ -105,6 +134,7 @@ header button {
 
 .container .call-to-action .call-text h3, p {
     color: black;
+    max-width: 300px;
     
 }
 .container .call-to-action .call-text h3 {
